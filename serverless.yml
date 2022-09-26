@@ -1,0 +1,21 @@
+service: sw-api
+frameworkVersion: "3"
+
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  environment:
+    DB_HOST: ${env:DB_HOST}
+    DB_NAME: ${env:DB_NAME}
+    DB_USERNAME: ${env:DB_USERNAME}
+    DB_PASSWORD: ${env:DB_PASSWORD}
+
+plugins:
+  - serverless-offline
+
+functions:
+  - ${file(./src/handlers/common-functions.yml)}
+  - ${file(./src/handlers/persona-functions.yml)}
+  - ${file(./src/handlers/planeta-functions.yml)}

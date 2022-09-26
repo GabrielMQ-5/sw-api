@@ -1,0 +1,13 @@
+getPersona:
+  handler: src/personaHandler.getPersona
+  events:
+    - httpApi:
+        path: /getPersona
+        method: get
+
+postPersona:
+  handler: src/personaHandler.postPersona
+  events:
+    - httpApi:
+        path: /postPersona
+        method: post

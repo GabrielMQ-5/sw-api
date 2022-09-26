@@ -1,0 +1,13 @@
+getPlaneta:
+  handler: src/planetaHandler.getPlaneta
+  events:
+    - httpApi:
+        path: /getPlaneta
+        method: get
+
+postPlaneta:
+  handler: src/planetaHandler.postPlaneta
+  events:
+    - httpApi:
+        path: /postPlaneta
+        method: post

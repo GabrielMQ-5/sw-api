@@ -1,0 +1,6 @@
+testConnection:
+  handler: src/handler.testConnection
+  events:
+    - httpApi:
+        path: /testConnection
+        method: get

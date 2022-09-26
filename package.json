@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "serverless-mysql": "^1.5.4",
+    "serverless-offline": "^10.2.1"
+  }
+}
